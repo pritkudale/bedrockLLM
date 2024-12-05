@@ -1,3 +1,18 @@
+# Repo for Amazon Bedrock Youtube tutorial 
+
+https://www.youtube.com/watch?v=SUu7ad8iuhI&list=PLivfVBKXLkx98BYI_PbKYzsCN8EM8zcJo
+
+Everyone now wants to add a little bit of AI to their websites and applications, and today I will show you the tool that can help you to do it easy - Amazon Bedrock. 
+It is a fully managed service that provides you with different base models and you can customise them or create agents without building all the necessary infrastructure - because AWS already did it for you. 
+In this tutorial I will do the quick overview of the Bedrock and how to set up your account to access the models, and then I will also show you how you can call the model from both backend applications  and front end ones. 
+
+## Run the project 
+
+```bash
+yarn install
+yarn dev
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
