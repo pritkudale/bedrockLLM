@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BedrockRuntimeClient, InvokeModelCommand, InvokeModelWithResponseStreamCommand } from "@aws-sdk/client-bedrock-runtime";
+import { BedrockRuntimeClient, InvokeModelCommand } from "@aws-sdk/client-bedrock-runtime";
 import "./App.css";
 
 import { ChatInput } from "./components/ChatInput/ChatInput";
@@ -29,7 +29,7 @@ function App() {
     const onSubmit = async (prompt: string) => {
         addToHistory(prompt, USER_NAME);
         const response = await client.send(
-            new InvokeModelWithResponseStreamCommand({
+            new InvokeModelCommand({
                 contentType: "application/json",
                 body: JSON.stringify({
                     inputText: prompt,
